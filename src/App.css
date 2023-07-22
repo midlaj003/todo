@@ -1,38 +1,86 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: "baloo_paaji_2regular";
+}
+
+@font-face {
+  font-family: "baloo_paaji_2regular";
+  src: url("./practice/fonts/baloopaaji2-regular-webfont.woff2")
+          format("woff2"),
+      url("./practice/fonts/baloopaaji2-regular-webfont.woff")
+          format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+div#root{
+  width: 45%;
+  margin: 0 auto;
+}
+div.content{
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  margin-top: 32px;
+}
+h1{
+  color: #2d2d2d;
+  font-size: 48px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  font-size: 24px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li.element{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 24px;
+}
+form input[type="checkbox"]{
+  margin-right: 12px;
+}
+.element label{
+  width: 342px;
+}
+button{
+  background: none;
+  border: none;
+}
+button img{
+  width: 16px;
+}
+input[type="text"]{
+  width: 356px;
+  height: 40px;
+  padding-left: 12px;
+}
+button.add{
+  background: #2d2d2d;
+  color: #fff;
+  width: 75px;
+  height: 40px;
+  position: relative;
+  right: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+span.tk{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+img.tick{
+  display: block;
+  width: 85%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label.completed{
+  width: 295px;
+}
+button img.revert{
+  margin-right: 8px;
 }
